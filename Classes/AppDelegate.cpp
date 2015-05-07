@@ -1,7 +1,11 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "TapjoyIntegration.h"
+
+#define COCOS2D_DEBUG 1
 
 USING_NS_CC;
+using namespace tapjoy;
 
 AppDelegate::AppDelegate() {
 
@@ -46,6 +50,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
+    TapjoyIntegration::init();
+    Tapjoy::startSession();
+
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
 
@@ -61,6 +68,8 @@ void AppDelegate::applicationDidEnterBackground() {
 
     // if you use SimpleAudioEngine, it must be pause
     // SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
+    
+    Tapjoy::endSession();
 }
 
 // this function will be called when the app is active again
@@ -69,4 +78,6 @@ void AppDelegate::applicationWillEnterForeground() {
 
     // if you use SimpleAudioEngine, it must resume here
     // SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
+    
+    Tapjoy::startSession();
 }

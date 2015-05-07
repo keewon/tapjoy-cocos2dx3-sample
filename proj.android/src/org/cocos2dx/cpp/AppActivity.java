@@ -26,7 +26,22 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.cpp;
 
+import android.app.Activity;
+import android.os.Bundle;
 import org.cocos2dx.lib.Cocos2dxActivity;
+import com.tapjoy.Tapjoy;
 
 public class AppActivity extends Cocos2dxActivity {
+  @Override
+  protected void onCreate(Bundle bundle) {
+    super.onCreate(bundle);
+    setActivity();
+    Tapjoy.setDebugEnabled(true);
+  }
+
+  public native void setActivity();
+
+  static {
+    Tapjoy.loadSharedLibrary();
+  }
 }

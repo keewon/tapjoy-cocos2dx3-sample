@@ -1,0 +1,6 @@
+assets/
+gen/
+obj/
+bin/
+libs/
+local.properties

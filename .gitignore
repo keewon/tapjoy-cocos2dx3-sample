@@ -1,1 +1,3 @@
-cocos2d
+cocos2d/
+proj.android/TapjoySDK/
+bin/
