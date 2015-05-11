@@ -10,8 +10,6 @@
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
@@ -58,15 +56,39 @@
 		521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6319F0C34300D177D7 /* Default-736h@3x.png */; };
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
-		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		629ED1BC1B006FD300696A31 /* Tapjoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1BB1B006FD300696A31 /* Tapjoy.framework */; };
+		629ED1BE1B00706300696A31 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1BD1B00706300696A31 /* AdSupport.framework */; };
+		629ED1C01B00706C00696A31 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1BF1B00706C00696A31 /* CFNetwork.framework */; };
+		629ED1C21B00707500696A31 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1C11B00707500696A31 /* CoreData.framework */; };
+		629ED1C41B00708B00696A31 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1C31B00708B00696A31 /* CoreMotion.framework */; };
+		629ED1C61B00709500696A31 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1C51B00709500696A31 /* Security.framework */; };
+		629ED1C81B0070A000696A31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1C71B0070A000696A31 /* UIKit.framework */; };
+		629ED1CB1B0070AA00696A31 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1C91B0070AA00696A31 /* EventKit.framework */; };
+		629ED1CC1B0070AA00696A31 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1CA1B0070AA00696A31 /* EventKitUI.framework */; };
+		629ED1CE1B0070B800696A31 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1CD1B0070B800696A31 /* libc++.dylib */; };
+		629ED1D01B0070C300696A31 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1CF1B0070C300696A31 /* libsqlite3.dylib */; };
+		629ED1D21B0070CB00696A31 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1D11B0070CB00696A31 /* libxml2.dylib */; };
+		629ED1D41B0070D700696A31 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1D31B0070D700696A31 /* MapKit.framework */; };
+		629ED1D61B0070E000696A31 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1D51B0070E000696A31 /* MediaPlayer.framework */; };
+		629ED1D81B0070E800696A31 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1D71B0070E800696A31 /* MessageUI.framework */; };
+		629ED1DA1B0070F100696A31 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1D91B0070F100696A31 /* MobileCoreServices.framework */; };
+		629ED1DC1B0070FC00696A31 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1DB1B0070FC00696A31 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		629ED1DE1B00710C00696A31 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1DD1B00710C00696A31 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		629ED1E01B00711700696A31 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1DF1B00711700696A31 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		629ED1E21B00712500696A31 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1E11B00712500696A31 /* SystemConfiguration.framework */; };
+		629ED1E41B00712C00696A31 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1E31B00712C00696A31 /* Twitter.framework */; };
+		629ED1E61B00715200696A31 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1E51B00715200696A31 /* CoreTelephony.framework */; };
+		629ED1E81B00715E00696A31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1E71B00715E00696A31 /* CoreGraphics.framework */; };
+		629ED1EA1B00717900696A31 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1E91B00717900696A31 /* CoreLocation.framework */; };
+		629ED1EC1B00719D00696A31 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629ED1EB1B00719D00696A31 /* OpenGLES.framework */; };
+		629ED1EF1B0071BA00696A31 /* TapjoyIntegration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 629ED1ED1B0071BA00696A31 /* TapjoyIntegration.cpp */; };
+		629ED1F11B00726400696A31 /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 629ED1F01B00726400696A31 /* TapjoyResources.bundle */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
-		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
-		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +173,35 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		626315481AFC64E7003C174C /* Tapjoy.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tapjoy.embeddedframework; path = TapjoySDK/Libraries/Tapjoy.embeddedframework; sourceTree = "<group>"; };
+		629ED1BB1B006FD300696A31 /* Tapjoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tapjoy.framework; path = TapjoySDK/Libraries/Tapjoy.embeddedframework/Tapjoy.framework; sourceTree = "<group>"; };
+		629ED1BD1B00706300696A31 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1BF1B00706C00696A31 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1C11B00707500696A31 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1C31B00708B00696A31 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1C51B00709500696A31 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1C71B0070A000696A31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1C91B0070AA00696A31 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1CA1B0070AA00696A31 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/EventKitUI.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1CD1B0070B800696A31 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
+		629ED1CF1B0070C300696A31 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
+		629ED1D11B0070CB00696A31 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
+		629ED1D31B0070D700696A31 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1D51B0070E000696A31 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1D71B0070E800696A31 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1D91B0070F100696A31 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1DB1B0070FC00696A31 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/PassKit.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1DD1B00710C00696A31 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1DF1B00711700696A31 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1E11B00712500696A31 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1E31B00712C00696A31 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Twitter.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1E51B00715200696A31 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1E71B00715E00696A31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1E91B00717900696A31 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1EB1B00719D00696A31 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		629ED1ED1B0071BA00696A31 /* TapjoyIntegration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TapjoyIntegration.cpp; sourceTree = "<group>"; };
+		629ED1EE1B0071BA00696A31 /* TapjoyIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapjoyIntegration.h; sourceTree = "<group>"; };
+		629ED1F01B00726400696A31 /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapjoyResources.bundle; path = ../proj.ios_mac/TapjoySDK/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -166,18 +217,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */,
+				629ED1EC1B00719D00696A31 /* OpenGLES.framework in Frameworks */,
+				629ED1EA1B00717900696A31 /* CoreLocation.framework in Frameworks */,
+				629ED1E81B00715E00696A31 /* CoreGraphics.framework in Frameworks */,
+				629ED1E61B00715200696A31 /* CoreTelephony.framework in Frameworks */,
+				629ED1E41B00712C00696A31 /* Twitter.framework in Frameworks */,
+				629ED1E21B00712500696A31 /* SystemConfiguration.framework in Frameworks */,
+				629ED1E01B00711700696A31 /* StoreKit.framework in Frameworks */,
+				629ED1DE1B00710C00696A31 /* Social.framework in Frameworks */,
+				629ED1DC1B0070FC00696A31 /* PassKit.framework in Frameworks */,
+				629ED1DA1B0070F100696A31 /* MobileCoreServices.framework in Frameworks */,
+				629ED1D81B0070E800696A31 /* MessageUI.framework in Frameworks */,
+				629ED1D61B0070E000696A31 /* MediaPlayer.framework in Frameworks */,
+				629ED1D41B0070D700696A31 /* MapKit.framework in Frameworks */,
+				629ED1D21B0070CB00696A31 /* libxml2.dylib in Frameworks */,
+				629ED1D01B0070C300696A31 /* libsqlite3.dylib in Frameworks */,
+				629ED1CE1B0070B800696A31 /* libc++.dylib in Frameworks */,
+				629ED1CB1B0070AA00696A31 /* EventKit.framework in Frameworks */,
+				629ED1CC1B0070AA00696A31 /* EventKitUI.framework in Frameworks */,
+				629ED1C81B0070A000696A31 /* UIKit.framework in Frameworks */,
+				629ED1C61B00709500696A31 /* Security.framework in Frameworks */,
+				629ED1C41B00708B00696A31 /* CoreMotion.framework in Frameworks */,
+				629ED1C21B00707500696A31 /* CoreData.framework in Frameworks */,
+				629ED1C01B00706C00696A31 /* CFNetwork.framework in Frameworks */,
+				629ED1BE1B00706300696A31 /* AdSupport.framework in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */,
-				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-				BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */,
 				BF1712471292920000B8313A /* libz.dylib in Frameworks */,
 				BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */,
 				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
 				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
+				629ED1BC1B006FD300696A31 /* Tapjoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +323,32 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				629ED1EB1B00719D00696A31 /* OpenGLES.framework */,
+				629ED1E91B00717900696A31 /* CoreLocation.framework */,
+				629ED1E71B00715E00696A31 /* CoreGraphics.framework */,
+				629ED1E51B00715200696A31 /* CoreTelephony.framework */,
+				629ED1E31B00712C00696A31 /* Twitter.framework */,
+				629ED1E11B00712500696A31 /* SystemConfiguration.framework */,
+				629ED1DF1B00711700696A31 /* StoreKit.framework */,
+				629ED1DD1B00710C00696A31 /* Social.framework */,
+				629ED1DB1B0070FC00696A31 /* PassKit.framework */,
+				629ED1D91B0070F100696A31 /* MobileCoreServices.framework */,
+				629ED1D71B0070E800696A31 /* MessageUI.framework */,
+				629ED1D51B0070E000696A31 /* MediaPlayer.framework */,
+				629ED1D31B0070D700696A31 /* MapKit.framework */,
+				629ED1D11B0070CB00696A31 /* libxml2.dylib */,
+				629ED1CF1B0070C300696A31 /* libsqlite3.dylib */,
+				629ED1CD1B0070B800696A31 /* libc++.dylib */,
+				629ED1C91B0070AA00696A31 /* EventKit.framework */,
+				629ED1CA1B0070AA00696A31 /* EventKitUI.framework */,
+				629ED1C71B0070A000696A31 /* UIKit.framework */,
+				629ED1C51B00709500696A31 /* Security.framework */,
+				629ED1C31B00708B00696A31 /* CoreMotion.framework */,
+				629ED1C11B00707500696A31 /* CoreData.framework */,
+				629ED1BF1B00706C00696A31 /* CFNetwork.framework */,
+				629ED1BD1B00706300696A31 /* AdSupport.framework */,
+				629ED1BB1B006FD300696A31 /* Tapjoy.framework */,
+				626315481AFC64E7003C174C /* Tapjoy.embeddedframework */,
 				8262943D1AAF051F00CB7CF7 /* Security.framework */,
 				52B47A461A53D09B004E4C60 /* Security.framework */,
 				D6B0611A1803AB670077942B /* CoreMotion.framework */,
@@ -276,6 +373,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				629ED1F01B00726400696A31 /* TapjoyResources.bundle */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
@@ -289,6 +387,8 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				629ED1ED1B0071BA00696A31 /* TapjoyIntegration.cpp */,
+				629ED1EE1B0071BA00696A31 /* TapjoyIntegration.h */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
@@ -393,7 +493,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = MDDB52YB8L;
+						DevelopmentTeam = VBZW3QL5T9;
 					};
 				};
 			};
@@ -461,6 +561,7 @@
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
+				629ED1F11B00726400696A31 /* TapjoyResources.bundle in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
@@ -494,6 +595,7 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				629ED1EF1B0071BA00696A31 /* TapjoyIntegration.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -531,6 +633,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TapjoySDK/Libraries/Tapjoy.embeddedframework",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -567,6 +673,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TapjoySDK/Libraries/Tapjoy.embeddedframework",
+				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/Prefix.pch;

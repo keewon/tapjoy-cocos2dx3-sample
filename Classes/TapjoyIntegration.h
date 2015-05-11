@@ -19,8 +19,7 @@ namespace TapjoyIntegration {
     void init();
     void getCurrencyBalance();
     void showOffers();
-    void requestCTA();
-    void checkIsContentReady();
+    void requestPlacement();
 }
 
 

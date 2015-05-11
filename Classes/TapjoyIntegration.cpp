@@ -19,7 +19,7 @@
 USING_NS_CC;
 using namespace tapjoy;
 
-TJPlacementHandle p1;
+static TJPlacementHandle p1;
 
 static MyTJConnectListener connectListener;
 static MyTJPlacementListener placementListener;
@@ -35,7 +35,7 @@ void MyTJConnectListener::onConnectSuccess() {
     CCLOG("Tapjoy::onConnectSuccess");
     
     
-    TJPlacementHandle placementHandle = TJPlacement::create("APP_LAUNCH", &placementListener);
+    TJPlacementHandle placementHandle = TJPlacement::create("test_unit", &placementListener);
     TJPlacement::requestContent(placementHandle);
 };
 
@@ -141,21 +141,14 @@ void MyViewListener::onViewDidOpen(int viewType) {
 
 namespace TapjoyIntegration {
     void init() {
-        //Tapjoy::setDebugEnabled(true);
+        Tapjoy::setDebugEnabled(true);
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
         // EasyApp iOS
         Tapjoy::connect("E7CuaoUWRAWdz_5OUmSGsgEBXHdOwPa8de7p4aseeYP01mecluf-GfNgtXlF", &connectListener);
-
-        //Tapjoy::connect("Lusv_4YqSd-QmHz3juGhyQEBl820m96flLwhRJJs97WIIEyoJ0UjLUknoyh_", &connectListener);
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-        // TODO
-        //Tapjoy::setContext(NULL);
         // EasyApp Android
         Tapjoy::connect("u6SfEbh_TA-WMiGqgQ3W8QECyiQIURFEeKm0zbOggubusy-o5ZfXp33sTXaD", &connectListener);
-
-        //Tapjoy::connect("8q0uaivpRyKDRapqQaAkMgECE1pQpkCyaPgXl6g54llcUcBo4lbF4bBm_zHC", &connectListener);
-
 #endif
         
         Tapjoy::setEarnedCurrencyListener(&earnedCurrencyListener);
@@ -171,19 +164,9 @@ namespace TapjoyIntegration {
         Tapjoy::showOffers(&offersListener);
     }
     
-    void requestCTA() {
-        if (p1) {
-          TJPlacement::isContentReady(p1);
-          TJPlacement::release(p1);
-          //p1 = NULL;
-        }
+    void requestPlacement() {
         p1 = TJPlacement::create("test_unit", &placementListener);
         TJPlacement::requestContent(p1);
-    }
-
-    void checkIsContentReady() {
-          bool b = TJPlacement::isContentReady(p1);
-          CCLOG("checkIsContentReady of p1: %d", b);
     }
 }
 
