@@ -37,6 +37,7 @@ public class AppActivity extends Cocos2dxActivity {
     super.onCreate(bundle);
     setActivity();
     Tapjoy.setDebugEnabled(true);
+    Tapjoy.setGcmSender("34027022155");
   }
 
   public native void setActivity();
