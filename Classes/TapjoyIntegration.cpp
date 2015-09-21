@@ -37,6 +37,12 @@ void MyTJConnectListener::onConnectSuccess() {
     
     TJPlacementHandle placementHandle = TJPlacement::create("test_unit", &placementListener);
     TJPlacement::requestContent(placementHandle);
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+    Tapjoy::trackPurchaseInGooglePlayStore("{\"title\":\"TITLE\",\"price\":\"$3.33\",\"type\":\"inapp\",\"description\":\"DESC\",\"price_amount_micros\":3330000,\"price_currency_code\":\"USD\",\"productId\":\"3\"}", "{\"orderId\":\"123.456\",\"packageName\":\"com.tapjoy.easyapp.iaptest\",\"productId\":\"test_item_01\",\"purchaseTime\": 1234567890,\"purchaseState\":0,\"developerPayload\":\"bGoa+V7g/yqDXvKRqq+JTFn4uQZbPiQJo4pf9RzJ\",\"purchaseToken\":\"opaque-token-up-to-1000-characters\"}", "AAAA", 0);
+#elif (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    Tapjoy::trackPurchaseInAppleAppStore("productId", "currencyCode", 3.33, "transactionId", NULL);
+#endif
 };
 
 void MyTJConnectListener::onConnectFailure() {
