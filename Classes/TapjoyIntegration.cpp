@@ -25,8 +25,6 @@ static MyTJConnectListener connectListener;
 static MyTJPlacementListener placementListener;
 static MyEarnedCurrencyListener earnedCurrencyListener;
 static MyGetCurrencyBalanceListener getCurrencyBalanceListener;
-static MyOffersListener offersListener;
-static MyViewListener viewListener;
 static MyVideoListener videoListener;
 
 // MyTJConnectListener
@@ -106,10 +104,6 @@ void MyEarnedCurrencyListener::onEarnedCurrency(const char* currencyName, int am
     CCLOG("%s %s %d", __FUNCTION__, currencyName, amount);
 }
 
-void MyOffersListener::onOffersResponse() {
-    CCLOG("%s", __FUNCTION__);
-}
-
 void MyVideoListener::onVideoStart() {
     CCLOG("%s", __FUNCTION__);
 }
@@ -124,22 +118,6 @@ void MyVideoListener::onVideoError(int statusCode) {
 
 void MyVideoListener::onVideoComplete() {
     CCLOG("%s", __FUNCTION__);
-}
-
-void MyViewListener::onViewWillClose(int viewType) {
-    CCLOG("%s %d", __FUNCTION__, viewType);
-}
-
-void MyViewListener::onViewDidClose(int viewType) {
-    CCLOG("%s %d", __FUNCTION__, viewType);
-}
-
-void MyViewListener::onViewWillOpen(int viewType) {
-    CCLOG("%s %d", __FUNCTION__, viewType);
-}
-
-void MyViewListener::onViewDidOpen(int viewType) {
-    CCLOG("%s %d", __FUNCTION__, viewType);
 }
 
 ///////
@@ -158,7 +136,6 @@ namespace TapjoyIntegration {
 #endif
         
         Tapjoy::setEarnedCurrencyListener(&earnedCurrencyListener);
-        Tapjoy::setTapjoyViewListener(&viewListener);
         Tapjoy::setVideoListener(&videoListener);
     }
     
@@ -167,7 +144,7 @@ namespace TapjoyIntegration {
     }
     
     void showOffers() {
-        Tapjoy::showOffers(&offersListener);
+        //Tapjoy::showOffers(&offersListener);
     }
     
     void requestPlacement() {

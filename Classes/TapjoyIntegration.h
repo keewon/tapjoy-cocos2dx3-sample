@@ -49,22 +49,11 @@ class MyEarnedCurrencyListener : public tapjoy::TJEarnedCurrencyListener {
     virtual void onEarnedCurrency(const char* currencyName, int amount);
 };
 
-class MyOffersListener : public tapjoy::TJOffersListener {
-    virtual void onOffersResponse();
-};
-
 class MyVideoListener : public tapjoy::TJVideoListener {
     virtual void onVideoStart();
     virtual void onVideoClose();
     virtual void onVideoError(int statusCode);
     virtual void onVideoComplete();
-};
-
-class MyViewListener : public tapjoy::TJViewListener {
-    virtual void onViewWillClose(int viewType);
-    virtual void onViewDidClose(int viewType);
-    virtual void onViewWillOpen(int viewType);
-    virtual void onViewDidOpen(int viewType);
 };
 
 #endif /* defined(__TapjoySampleGame__TapjoyIntegration__) */
