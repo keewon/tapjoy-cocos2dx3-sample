@@ -128,11 +128,9 @@ namespace TapjoyIntegration {
         Tapjoy::setDebugEnabled(true);
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-        // EasyApp iOS
-        Tapjoy::connect("E7CuaoUWRAWdz_5OUmSGsgEBXHdOwPa8de7p4aseeYP01mecluf-GfNgtXlF", &connectListener);
+        Tapjoy::connect("Y8jwqrjzRSqY7vkd73MqYwEBa8eeU4YrjBN6KESoduQs3CkmuHwZfAsBhjgW", &connectListener);
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-        // EasyApp Android
-        Tapjoy::connect("u6SfEbh_TA-WMiGqgQ3W8QECyiQIURFEeKm0zbOggubusy-o5ZfXp33sTXaD", &connectListener);
+        Tapjoy::connect("hIhIUD1US7K8fgtlYBBOEwECJIk9w0uaSnkgkCfZvUWJ8xSdKq6txFhw887e", &connectListener);
 #endif
         
         Tapjoy::setEarnedCurrencyListener(&earnedCurrencyListener);
