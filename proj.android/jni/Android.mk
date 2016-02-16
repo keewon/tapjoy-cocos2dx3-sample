@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/external)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/cocos)
-$(call import-add-path,$(LOCAL_PATH)/../TapjoySDK/Library/modules)
+$(call import-add-path,$(LOCAL_PATH)/../TapjoySDK/Libraries/modules)
 
 LOCAL_MODULE := cocos2dcpp_shared
 

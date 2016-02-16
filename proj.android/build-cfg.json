@@ -3,7 +3,7 @@
         "../cocos2d",
         "../cocos2d/cocos",
         "../cocos2d/external",
-        "TapjoySDK/Library/modules"
+        "TapjoySDK/Libraries/modules"
     ],
     "copy_resources": [
         {
