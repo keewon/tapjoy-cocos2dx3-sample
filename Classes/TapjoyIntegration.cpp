@@ -129,12 +129,21 @@ namespace TapjoyIntegration {
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
         Tapjoy::connect("Y8jwqrjzRSqY7vkd73MqYwEBa8eeU4YrjBN6KESoduQs3CkmuHwZfAsBhjgW", &connectListener);
+        //Tapjoy::connect("u0KUKWQtTIG4fAjPZr4FrAEBQgt9NwL1vrIrB6IjZ2LkhYqlhiMGwfu1_iqp", &connectListener);
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
         Tapjoy::connect("hIhIUD1US7K8fgtlYBBOEwECJIk9w0uaSnkgkCfZvUWJ8xSdKq6txFhw887e", &connectListener);
+        //Tapjoy::connect("v8nIq5pHSOqYTnBXulLy-wECVJrM3crdEb3g23bMmZxOKRSFpUP70XkMqBHj", &connectListener);
 #endif
         
         Tapjoy::setEarnedCurrencyListener(&earnedCurrencyListener);
         Tapjoy::setVideoListener(&videoListener);
+
+        Tapjoy::addUserTag("ok computer");
+        Tapjoy::removeUserTag("ok computer");
+        Tapjoy::clearUserTags();
+        Tapjoy::addUserTag("ok computer 2");
+
+        TJPlacement::dismissContent();
     }
     
     void getCurrencyBalance() {

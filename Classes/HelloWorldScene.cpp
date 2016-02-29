@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
 #include "TapjoyIntegration.h"
+#include "ui/UITextField.h"
 
 USING_NS_CC;
 
@@ -30,6 +31,8 @@ bool HelloWorld::init()
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    
+    CCLOG("visibleSize: %f %f, origin: %f %f", visibleSize.width, visibleSize.height, origin.x, origin.y);
 
     /////////////////////////////
     // 2. add a menu item with "X" image, which is clicked to quit the program
@@ -72,6 +75,14 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
+
+    ////////
+    // TextField
+    auto textField = ui::TextField::create("TextField", "fonts/Marker Felt.ttf", 24);
+    textField->ignoreContentAdaptWithSize(false);
+    textField->setContentSize(Size(320, 100));
+    textField->setPosition(Vec2(10, 100));
+    this->addChild(textField, 2);
     
     return true;
 }
