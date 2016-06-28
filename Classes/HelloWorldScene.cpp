@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "TapjoyIntegration.h"
 #include "ui/UITextField.h"
+#include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 
@@ -29,10 +30,8 @@ bool HelloWorld::init()
         return false;
     }
     
-    Size visibleSize = Director::getInstance()->getVisibleSize();
+    auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
-    CCLOG("visibleSize: %f %f, origin: %f %f", visibleSize.width, visibleSize.height, origin.x, origin.y);
 
     /////////////////////////////
     // 2. add a menu item with "X" image, which is clicked to quit the program

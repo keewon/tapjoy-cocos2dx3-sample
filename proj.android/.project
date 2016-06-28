@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>TapjoySample</name>
+	<name>tapjoy-cocos2dx3-sample</name>
 	<comment></comment>
 	<projects>
 		<project>libcocos2dx</project>
